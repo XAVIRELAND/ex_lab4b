@@ -1,1 +1,1 @@
-Here's where the solution goes
+vagrant@webserver:~$ tshark -r /vagrant/webserver-eth0-traffic4.pcap -Y http.request -T fields -e ip.src -w > /vagrant/webserver-ip_adressess.txt
